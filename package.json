@@ -1,5 +1,5 @@
 {
-  "name": "fs-admin",
+  "name": "@shiftkey/fs-admin",
   "version": "0.20.0",
   "description": "Manipulate files with escalated privileges",
   "main": "index.js",
@@ -11,6 +11,7 @@
     "prebuild-napi-x64": "prebuild -t 3 -r napi -a x64 --strip",
     "prebuild-napi-ia32": "prebuild -t 3 -r napi -a ia32 --strip",
     "prebuild-napi-arm64": "prebuild -t 3 -r napi -a arm64 --strip",
+    "prebuild-napi-armv7l": "prebuild -t 3 -r napi -a armv7l --strip",
     "upload": "node ./script/upload.js"
   },
   "keywords": [
@@ -22,20 +23,20 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/fs-admin.git"
+    "url": "https://github.com/shiftkey/fs-admin.git"
   },
   "bugs": {
-    "url": "https://github.com/atom/fs-admin/issues"
+    "url": "https://github.com/shiftkey/fs-admin/issues"
   },
   "dependencies": {
-    "node-addon-api": "^4.2.0",
-    "prebuild-install": "^7.0.1"
+    "node-addon-api": "^8.3.0",
+    "prebuild-install": "^7.1.3"
   },
   "devDependencies": {
-    "mocha": "^9.2.0",
-    "node-gyp": "^8.0.0",
-    "prebuild": "^11.0.0",
-    "standard": "^16.0.1",
+    "mocha": "^11.1.0",
+    "node-gyp": "^11.0.0",
+    "prebuild": "^13.0.1",
+    "standard": "^17.1.2",
     "temp": "^0.9.0"
   },
   "binary": {
